@@ -47,7 +47,7 @@ This section will guide you through the set up process for this project.
 4.  Add the params.yml to microstrain_inertial_driver package.
 
     ```sh
-    cp ./src/autonomous-agility-car/assets/params.yml ./src/microstrain_inertial/microstrain_inertial_driver/config/
+    cp ./autonomous-agility-car/assets/params.yml ./microstrain_inertial/microstrain_inertial_driver/config/
     ```
 
 5.  Update the dependencies and build the packages.
