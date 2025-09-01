@@ -1,0 +1,35 @@
+microstrain_inertial_driver:
+  ros__parameters:
+    # Connection
+    port: /dev/ttyACM0
+    baudrate: 115200
+
+    # Device setup
+    device_setup: true
+    save_settings: false
+
+    # --- IMU Streams ---
+    imu_data_rate: 100           # /imu/data
+    imu_data_raw_rate: 100       # /imu/data_raw
+    imu_mag_data_rate: 50        # /imu/mag
+    imu_pressure_data_rate: 10   # /imu/pressure
+
+    # --- EKF Streams ---
+    filter_imu_data_rate: 100                      # /ekf/imu/data
+    filter_human_readable_status_data_rate: 1      # /ekf/status
+    filter_aiding_measurement_summary_rate: 1      # /mip/ekf/aiding_measurement_summary
+
+    # Gravity handling: true = remove gravity
+    filter_use_compensated_accel: false
+
+    # --- MIP Diagnostic Streams ---
+    sensor_temperature_statistics_rate: 1         # /mip/sensor/temperature_statistics
+    sensor_overrange_status_rate: 1               # /mip/sensor/overrange_status
+    system_built_in_test_rate: 1                  # /mip/system/built_in_test
+    filter_status_data_rate: 1                    # /mip/ekf/status
+
+    # Frames
+    frame_id: imu_link
+    map_frame_id: map
+    earth_frame_id: earth
+
