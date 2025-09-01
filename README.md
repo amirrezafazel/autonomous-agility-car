@@ -44,7 +44,13 @@ This section will guide you through the set up process for this project.
     git clone -b ros2 https://github.com/Slamtec/rplidar_ros.git
     ```
 
-4.  Update the dependencies and build the packages.
+4.  Add the params.yml to microstrain_inertial_driver package.
+
+    ```sh
+    cp ./src/autonomous-agility-car/assets/params.yml ./src/microstrain_inertial/microstrain_inertial_driver/config/
+    ```
+
+5.  Update the dependencies and build the packages.
 
     ```sh
     cd ..
@@ -54,7 +60,7 @@ This section will guide you through the set up process for this project.
     colcon build --symlink-install --cmake-args=-DCMAKE_BUILD_TYPE=Release --parallel-workers $(nproc) # build the workspace
     ```
 
-5.  Source the workspace to use its ROS packages and commands.
+6.  Source the workspace to use its ROS packages and commands.
 
     ```sh
     source ./install/setup.bash
@@ -66,17 +72,11 @@ This section will guide you through the set up process for this project.
     echo source $(pwd)/install/setup.bash >> ~/.bashrc
     ```
 
-6.  Create udev rules for rplidar.
+7.  Create udev rules for rplidar.
 
     ```sh
     source ./src/rplidar_ros/scripts/create_udev_rules.sh
     cd ../..
-    ```
-
-6.  Add the params.yml to microstrain_inertial_driver package.
-
-    ```sh
-    cp ./src/autonomous-agility-car/assets/params.yml ./src/microstrain_inertial/microstrain_inertial_driver/config/
     ```
 
 ## 🏃 Usage
