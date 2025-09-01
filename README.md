@@ -69,13 +69,14 @@ This section will guide you through the set up process for this project.
 6.  Create udev rules for rplidar.
 
     ```sh
-    source ./src/rpldiar_ros/scripts/create_udev_rules.sh
+    source ./src/rplidar_ros/scripts/create_udev_rules.sh
+    cd ../..
     ```
 
 6.  Add the params.yml to microstrain_inertial_driver package.
 
     ```sh
-    cp ./src/assets/params.yml ./src/microstrain_inertial/microstrain_inertial_driver/config/
+    cp ./src/autonomous-agility-car/assets/params.yml ./src/microstrain_inertial/microstrain_inertial_driver/config/
     ```
 
 ## 🏃 Usage
