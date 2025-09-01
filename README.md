@@ -1,6 +1,6 @@
 # Autonomous RC Car - ROS2
 
-This project involves converting a Traxxas RC car into an autonomous vehicle using ROS2. The car is equipped with a ZED2i stereo camera, an RPLiDAR S1, a Microstrain 3DM-GX5-25 IMU, a Hemisphere GNSS base and rover, and an NVIDIA Jetson TX2i for processing. More details about the project can be found [here](assets/Report.pdf).
+This project involves converting a Traxxas RC car into an autonomous vehicle using ROS2. The car is equipped with a ZED2i stereo camera, an RPLiDAR S1, a Microstrain 3DM-GX5-25 IMU, a Hemisphere GNSS base and rover, and an NVIDIA Jetson TX2i for processing. More details about the project can be found [here](assets/report.pdf).
 
 <!-- ![Project Screenshot](assets/robots.png) -->
 
@@ -27,7 +27,7 @@ This section will guide you through the set up process for this project.
 
 2.  Clone the repository into your workspace.
     ```sh
-    git clone ...
+    git clone https://github.com/amirrezafazel/autonomous-agility-car.git
     ```
 
 3.  Clone the following repositories:
