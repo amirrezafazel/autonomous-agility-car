@@ -20,9 +20,7 @@ setup(
     tests_require=['pytest'],
     entry_points={
         'console_scripts': [
-            'ekf_localisation = localisation.ekf_localisation_node:main',
-            'ekf_localisation_3d = localisation.ekf_localisation_3d_node:main',
-            'new_ekf_localisation_3d = localisation.ekf_localisation_3d_node_6:main'
+            'ekf_localisation = localisation.ekf_localisation:main',
         ],
     },
 )
